@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{name}}</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container">
+                    <a class="navbar-brand" href="#"><i class="fa-solid fa-dragon"></i></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    {% include "components/_navigation.html" %}
+
+                    <div class="col-2 align-items-start justify-content-center">
+                        <img  class="logo" src="/static/d20.png" alt="logo">
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="offset-1"></div>
+            <div class="col-auto text-wrapper">"Он плетёт магию из слов и музыки, вдохновляя союзников и деморализуя противников"<span class="term1"></div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-9">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active car-img-wrapper">
+                            <img src="https://img.ttg.club/classes/Bard.webp" class="d-block" style="height: 400px;" alt="bard-halfelf">
+                            <div class="carousel-caption d-none d-md-block">
+                                <span class="caru">
+                                   <span class="term1">Бард-полуэльф</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="carousel-item car-img-wrapper">
+                              <img src="https://img.ttg.club/classes/Bard2.webp" class="d-block" style="height: 400px;" alt="bard-tiefling">
+                              <div class="carousel-caption d-none d-md-block">
+                                <span class="caru">
+                                    Бард-тифлинг
+                                    </span>
+                              </div>
+                        </div>
+                        <div class="carousel-item car-img-wrapper">
+                              <img src="/static/bard_human.jpg" class="d-block" style="height: 400px;" alt="bard-human">
+                              <div class="carousel-caption d-none d-md-block">
+                                    <span class="caru">
+                                        Бард-человек
+                                    </span>
+                              </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="block">
+                    <div class="img-wrapper">
+                        <img class="img-wrapper" src="/static/bard_stock.jpg" alt="bard">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid tb">
+        <div class="row">
+            <div class="col-9 text-wrapper">
+                <p>
+                <h5>Музыка и магия</h5><br>
+                <span class="term1">В мирах DnD слова и музыка это не просто колебания воздуха, тут они содержат в себе силу. И бард является мастером речей, песен, и волшебства, заложенного в них. Барды говорят, что вся мультивселенная была вызвана к существованию и сформирована словами, которые произнесли боги. И отражения этих первородных Слов Творения до сих пор звучат в космосе. Музыка бардов это попытка уловить эти отзвуки и тонко вплести их в свои <a class="link-opacity-100" href="/templates//gloss.html">заклинания</a>.<br>
+                </p>
+
+                <p>
+                <span class="term1">Наиболее сильной чертой бардов является их исключительная разносторонность. Многие барды предпочитают держаться не на передовой в бою, используя свою магию для вдохновения союзников и препятствования противникам на расстоянии. Но барды способны защищать себя и в ближнем бою, при необходимости используя магию для укрепления своих клинков и доспехов. Их <a class="link-opacity-100" href="/templates//gloss.html">заклинания</a> чаще предназначены для очарования и создания иллюзий, а не для создания явных разрушений. Они обладают обширными знаниями во множестве тематик и естественные способности, которые позволяют им делать хорошо практически всё. Барды становятся мастерами в тех талантах, к которым стремятся их умы, оттачивая их до совершенства, от музыкальных выступлений до эзотерических знаний.<br>
+                </p>
+                <h5>Обучение на опыте.</h5><br>
+                <p>
+                <span class="term1">Истинные барды не являются обыденной вещью в мире. Не каждый менестрель, поющий в таверне, или шут, скачущий при королевском дворе, является бардом. Чтобы обнаружить скрытую в музыке магию, требуется тяжёлое обучение и некоторая степень природного таланта, чего большинству трубадуров и жонглёров недостаёт. Однако, определить разницу между этими исполнителями может быть трудно. Жизнь барда проходит в странствиях по землям и посвящена сбору знаний, повествованию историй, и существованию за счёт благодарности публики, как и у любого другого артиста. Но глубина знаний, уровень музыкального мастерства и связь с <a class="link-opacity-100" href="/templates//gloss.html">магией</a> ставит бардов на другую ступень от их собратьев.<br>
+                </p>
+
+                <p>
+                Барды редко селятся надолго в одном месте, и их естественная тяга к странствиям связана с поиском новых сказаний, обучением новым навыкам и открытию новых горизонтов, что делает карьеру искателя приключений для них естественным призванием. Каждое приключение — это возможность чему-то научиться, попрактиковать разные навыки, проникнуть в давно заброшенные гробницы, обнаружить утраченные произведения магии, расшифровать старые фолианты, пройтись по незнакомым местам, или столкнуться с экзотическими существами. Барды любят сопровождать героев, чтобы засвидетельствовать их свершения из первых рук.<br>
+                </p>
+
+                <p>
+                Бард, который может рассказать впечатляющую историю из личного опыта, зарабатывает известность среди других бардов. Более того, после повествования такого большого количества историй о великих свершениях героев, многие барды принимают их близко к сердцу и хотят принять роль героя сами.</span>. <br></p>
+
+                <h5>Создание барда.</h5><br>
+                <p>
+                    Барды процветают за счет историй, не важно, правдивы они или нет. Ваша предыстория и мотивы не так важны, как истории, что ваш персонаж рассказывает о себе. Возможно, у вас было безопасное и ничем не примечательное детство. В нём нет хороших историй, чтобы поведать о них, но вы можете изобразить себя сиротой, воспитанным ведьмой на зловещем болоте. Или ваше детство действительно может быть достойным истории. Некоторые барды приобретают свою волшебную музыку необычайными способами, в том числе под влиянием фей или других сверхъестественных существ.
+                </p>
+                <p>
+                    <span class="term">Были ли вы учеником у мастера, следуя за более опытным бардом, пока не начали следовать своему собственному пути? Или посещали коллегию, где вы обучались знаниям бардов и практиковали свою музыкальную <a class="link-opacity-100" href="/templates//gloss.html">магию</a>? Может быть, вы в молодости сбежали из дома, или став сиротой подружились с бродячим бардом, который стал вашим наставником. Или вы могли быть избалованным знатным ребенком, обученным мастером.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

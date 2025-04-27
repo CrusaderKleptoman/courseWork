@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{name}}</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container">
+                    <a class="navbar-brand" href="#"><i class="fa-solid fa-dragon"></i></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    {% include "components/_navigation.html" %}
+
+                    <div class="col-2 align-items-start justify-content-center">
+                        <img  class="logo" src="/static/d20.png" alt="logo">
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="offset-1"></div>
+            <div class="col-auto text-wrapper">"Призывая стихии или подражая животным, друиды воплощают незыблемость, приспособляемость и гнев природы."<span class="term1"></div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-9">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active car-img-wrapper">
+                            <img src="https://dnd.su/gallery/articles/90_4_1557350940.jpg" class="d-block" style="height: 400px;" alt="high-druid">
+                            <div class="carousel-caption d-none d-md-block">
+                                <span class="caru">
+                                   <span class="term1">Верховный друид</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="carousel-item car-img-wrapper">
+                              <img src="/static/druid-with-spirit.jpg" class="d-block" style="height: 400px;" alt="cleric_with_animal_spirit">
+                              <div class="carousel-caption d-none d-md-block">
+                                <span class="caru">
+                                    Друид с призванным духом
+                                    </span>
+                              </div>
+                        </div>
+                        <div class="carousel-item car-img-wrapper">
+                              <img src="/static/druid-in-wooden-armor.jpg" class="d-block" style="height: 400px;" alt="druid_in_wooden_armor">
+                              <div class="carousel-caption d-none d-md-block">
+                                    <span class="caru">
+                                        Друид в деревянной броне
+                                    </span>
+                              </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="block">
+                    <div class="img-wrapper">
+                        <img class="img-wrapper" src="/static/druid_stock.jpg" alt="druid">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid tb">
+        <div class="row">
+            <div class="col-9 text-wrapper">
+                <p>
+                <h5>Сила природы.</h5><br>
+                <span class="term1">Выше чего-либо другого друиды почитают природу. Именно она является источником всех их <a class="link-opacity-100" href="https://ttg.club/gods">заклинаний и магических способностей</a>, непсредственно или через природное божество. Многие предпочитают духовный путь конечного единения с природой, но есть и те, кто служат богам диких просторов, животных или стихий. Длящиеся испокон веков обычаи друидов также называют Старой Верой, противопоставляя их поклонению в храмах и у алтарей.<br>
+                </p>
+
+                <p>
+                <span class="term1"><a class="link-opacity-100" href="https://ttg.club/gods">Заклинания</a> друидов воздействуют через животных и окружающую природу. Это сила клыка и когтя, солнца и луны, огня и бури. Также друиды учатся принимать облик животных, и некоторые настолько углубляются в это умение, что родному облику предпочитают звериный.<br>
+                </p>
+                
+                <h5>Сохранение равновесия.</h5><br>
+                <p>
+                <span class="term1">Для друидов природа представляет собой шаткое равновесие. Воздух, земля, огонь и вода — те четыре стихии, что составляют основу мира — должны уравновешивать друг друга. Если одна из стихий обретёт превосходство, сам мир может прекратить существование, притянутый стихийным измерением и разорванный на элементарные  оставляющие. Чтобы не допустить этого, друиды противостоят сектам Стихийного Зла и всем, кто стремится наделить любую из стихий превосходящей силой. Также друидов заботит тонкое экологическое равновесие, необходимое флоре и фауне, и готовность цивилизованных поселений жить в гармонии с природой, а не противопоставлять себя ей. Жестокость природы — часть естественного порядка вещей, однако друиды не терпят всё чужеродное, включая аберрации (иллитиды и бехолдеры) и нежить (зомби и вампиры). Иногда друиды совершают вылазки на таких существ, особенно если те приближаются к их территориям.<br>
+                </p>
+
+                <p>
+                Священная земля и области нетронутой природы нередко охраняются друидом. Впрочем, при достаточной угрозе естественному равновесию или подзащитной земле друид может перейти к активной борьбе с напастью, ступив на путь искателя приключений.<br>
+                </p>
+
+                <h5>Создание друида.</h5><br>
+                <p>
+                    Создавая персонажа друида, подумайте о том, что сформировало его тесную связь с природой. Возможно, он родом из мест, где жива Старая Вера. Или же его, брошенного ребёнком в чаще леса, нашёл и вырастил друид. Возможно, персонаж испытал волнующий опыт встречи с духом природы — скажем, пережил нападение гигантского орла или лютого волка. Может, персонаж родился в разгар бури или во время извержения вулкана, что стало знаком уготованного ему пути друида.
+                </p>
+                <p>
+                    <span class="term">Всегда ли он был странствующим друидом или же когда-то охранял рощу или ручей? Возможно, зло отравило его родину, и он отправился в большой мир в поисках нового смысла и надежды.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+
+    header{
+        background-color: #ce8e30;
+        border-radius: 0px 0px 25px 25px;
+
+    }
+    .alt-1{
+        display: inline;
+        margin-left: 10px;
+    }
+    .alt-2{
+        display: inline;
+        margin-left: 35px;
+    }
+    .alt-3{
+        display: inline;
+        margin-left: 23px;
+    }
+    .elips{
+        box-sizing: border-box;
+        position: relative;
+        background: #fcc674;
+        border-radius: 78px;
+    }
+    .main-image-wrapper {
+        width: 170px; 
+        height: 170px; 
+        border: 1px solid silver;
+        margin: 0px;
+        box-shadow: 0 0 8px silver;
+        border-radius: 50%;  /* поставил 50% */
+        overflow: hidden;
+    }
+
+    .main-image {
+        height: 100%;
+    }
+    .bor{
+        border-right: 1px solid rgba(86,61,124,.2);
+    }
+    .navig{
+        font-size: 15pt;
+        color: rgb(0, 0, 0);
+    }
+    body {
+          background-color: #704742;
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-attachment: fixed;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-attachment: size;
+          color: black;
+          font-size: 14pt;
+}
+    .logo{
+        height: 60px;
+        float: right;
+        margin-top: 14px;
+    }
+
+    
+    .caru{
+        color: white;
+        font-size: 20pt;
+        -webkit-text-stroke: 1.2px grey;
+    }
+    .carousel {
+        height: 400px !important;
+        width: 80%;
+    }
+
+    .text-wrapper{
+        background: #c49271;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+
+    }
+    .tb .text-wrapper{
+         margin-right: 0px;
+         margin-left: 0px;
+    }
+    .img-wrapper{
+        display: block;
+        max-width: 100%;
+        border: 1px solid black;
+        
+    }
+
+    .img-wrapper-high{
+        overflow: hidden;
+        display: inline-block;
+        box-shadow: 0 0 8px silver;
+        border: 1px solid silver;
+        border-radius: 20%;
+        margin-top: 10px;
+    }
+    .img-high{
+        height: 500px;
+        max-width: 340px;
+    }
+    .car-img-wrapper{
+        height: 400px;
+    }
+
+    .block{
+        width: 100%;
+        display: flex;
+        border-left: 3px solid grey;
+        border-right: 3px solid grey;
+        border-bottom: 2px solid grey;
+    }
+    .block-1{
+        width: 44%;
+        float: left;
+        background: #c7b6df;
+        border-right: solid grey;
+        text-align: center;
+        bottom: 0;
+    }
+    .block-2{
+        width: 70%;
+        float: right;
+        padding-left: 10%;
+        background: #c7b6df;
+        text-align: left;
+        bottom: 0;
+    }
+    .passive{
+        color: rgba(0,0,0,0.5);
+    }
+    .active{
+        color: rgba(0,0,0,1);
+        background-color: #ce8e30,
+    }
+

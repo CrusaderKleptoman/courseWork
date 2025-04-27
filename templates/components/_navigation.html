@@ -1,0 +1,5 @@
+ {% for item in nav%}
+    <li class="nav-item">
+        <a{% if item.title == name %} class="nav-link active" {% else %} class="nav-link passive" {% endif %} href="{{item.URL}}">{{item.title}}</a>
+    </li>
+ {% endfor %}
